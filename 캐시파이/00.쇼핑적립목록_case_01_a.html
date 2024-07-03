@@ -1,0 +1,324 @@
+<!-- html include -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Referrer" content="origin">
+        <meta name="referrer" contents="always">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="robots" content="index,nofollow">
+        <meta name="description" content="description">
+        <meta property="og:title" content="캐시파이">
+        <meta property="og:url" content="localhost">
+        <meta property="og:image" content="캐시파이">
+        <meta property="og:description" content="description">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="캐시파이">
+        <meta name="twitter:url" content="localhost">
+        <meta name="twitter:image" content="캐시파이">
+        <meta name="twitter:description" content="description">
+        <title>캐시파이</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <script async="" src="./js/common.js"></script>
+    </head>
+    <body>
+<!-- html include -->
+
+
+<div id="wrap">
+  <header class="header">
+    <div class="header-wrap ">
+      <div class="flex">
+        <button type="button" class="header-wrap__back">쇼핑적립</button>
+        <a class="header-wrap__link" href="#">이용안내</a>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="content-banner content-mt">
+      <img src="../images/banner.png" width="100%" alt="광고배너">
+    </div>
+    <div class="item content-mt">
+        <div>
+            <div class="flex">
+                <i class="icon icon-c"></i>
+                <span class="item-title">내 캐시</span>
+            </div>
+            <div class="m-t--10">
+                <em class="font-color--o cash lato">16,670</em>
+                <small class="font-size--14 font-color--lightGray">캐시</small>
+            </div>
+       </div>
+       <div class="arrow">
+            <i class="icon icon-arrow-right"></i>
+       </div>
+    </div>
+
+    <div class="item content-mt">
+        <div>
+            <div class="flex">
+                <i class="icon icon-p"></i>
+                <span class="item-title">내 포인트</span>
+            </div>
+            <div class="m-t--10">
+                <em class="font-color--g cash lato">16,670</em>
+                <small class="font-size--14 font-color--lightGray">포인트</small>
+            </div>
+        </div>
+        <div class="arrow">
+            <i class="icon icon-arrow-right"></i>
+        </div>
+    </div>
+
+    <div class="item content-mt">
+        <div>
+            <div class="flex">
+                <i class="icon icon-m"></i>
+                <span class="item-title">내 마일리지</span>
+            </div>
+            <div class="m-t--10">
+                <em class="font-color--b cash lato">16,670</em>
+                <small class="font-size--14 font-color--lightGray">마일리지</small>
+            </div>
+        </div>
+        <div class="arrow">
+            <i class="icon icon-arrow-right"></i>
+        </div>
+    </div>
+    <div class="tabBtn flex m-t--24">
+        <span class="isActive">쇼핑<input type="radio" name="tab_chk" value="1" onclick="isTabActive(this)"></span>
+        <span>여행/도서<input type="radio" name="tab_chk"  value="2" onclick="isTabActive(this)"></span>
+        <span>구독<input type="radio" name="tab_chk"  value="3" onclick="isTabActive(this)"></span>
+    </div>
+    <div class="tabArea isActive">
+
+        <div class="item m-t--10">
+                <div class="">
+                    <span class="label-bg label-bg-g">즉시적립</span>
+                    <span class="m-t--1 m-l--5">쿠팡</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_coupang.png" alt="logo">
+                    </div>
+                </div>
+        </div>
+
+        <div class="item  m-t--10">
+            <div class="">
+                <span class="label-bg label-bg-b">방문적립</span>
+                <span class="m-t--1 m-l--5">AliExpress(알리익스프레스)</span>
+            </div>
+            <div class="relative">
+                <div class="m-t--10">
+                    <em class="font-size--28 bold">2.52</em>
+                    <small class="font-size--18">%</small>
+                </div>
+                <div class="company-logo">
+                    <img src="../images/logo/logo_ali.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="item  m-t--10">
+            <div class="">
+                <span class="label-bg label-bg-gray">예정적립</span>
+                <span class="m-t--1 m-l--5">쿠팡</span>
+            </div>
+            <div class="relative">
+                <div class="m-t--10">
+                    <em class="font-size--28 bold">2.52</em>
+                    <small class="font-size--18">%</small>
+                </div>
+                <div class="company-logo">
+                    <img src="../images/logo/logo_coupang.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- label bg 제거 -->
+        <div class="item m-t--10">
+            <div class="">
+                <span class="label label-g">즉시적립</span>
+                <span class="m-t--1 m-l--5">쿠팡</span>
+            </div>
+            <div class="relative">
+                <div class="m-t--10">
+                    <em class="font-size--28 bold">2.52</em>
+                    <small class="font-size--18">%</small>
+                </div>
+                <div class="company-logo">
+                    <img src="../images/logo/logo_coupang.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        
+        <div class="item  m-t--10">
+            <div class="">
+                <span class="label label-b">방문적립</span>
+                <span class="m-t--1 m-l--5">AliExpress(알리익스프레스)</span>
+            </div>
+            <div class="relative">
+                <div class="m-t--10">
+                    <em class="font-size--28 bold">2.52</em>
+                    <small class="font-size--18">%</small>
+                </div>
+                <div class="company-logo">
+                    <img src="../images/logo/logo_ali.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        
+        <div class="item  m-t--10">
+            <div class="">
+                <span class="label label-gray">예정적립</span>
+                <span class="m-t--1 m-l--5">쿠팡</span>
+            </div>
+            <div class="relative">
+                <div class="m-t--10">
+                    <em class="font-size--28 bold">2.52</em>
+                    <small class="font-size--18">%</small>
+                </div>
+                <div class="company-logo">
+                    <img src="../images/logo/logo_coupang.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- float 클래스로 감싸면 2개씩 나열 -->
+         <div class="float">
+            <div class="item m-t--10">
+                <div class="">
+                    <span class="label-bg label-bg-g">즉시</span>
+                    <span class="m-t--1 m-l--5">쿠팡</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_coupang.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item  m-t--10">
+                <div class="">
+                    <span class="label-bg label-bg-b">방문</span>
+                    <span class="m-t--1 m-l--5">AliExpress(알리익스프레스)</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_ali.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item  m-t--10">
+                <div class="">
+                    <span class="label-bg label-bg-gray">예정</span>
+                    <span class="m-t--1 m-l--5">쿠팡</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_coupang.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+        <!-- float 클래스로 감싸면 2개씩 나열 -->
+        <!-- label bg 제거 -->
+        <div class="float">
+            <div class="item m-t--10">
+                <div class="">
+                    <span class="label label-g">즉시</span>
+                    <span class="m-t--1 m-l--5">쿠팡</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_coupang.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item  m-t--10">
+                <div class="">
+                    <span class="label label-b">방문</span>
+                    <span class="m-t--1 m-l--5">AliExpress(알리익스프레스)</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_ali.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item  m-t--10">
+                <div class="">
+                    <span class="label label-gray">예정</span>
+                    <span class="m-t--1 m-l--5">쿠팡</span>
+                </div>
+                <div class="relative">
+                    <div class="m-t--10">
+                        <em class="font-size--28 bold">2.52</em>
+                        <small class="font-size--18">%</small>
+                    </div>
+                    <div class="company-logo">
+                        <img src="../images/logo/logo_coupang.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabArea">
+                <div class="item m-t--10">
+                    <div class="p-t--35 p-b--35 text-center">
+                        <span class="font-color--g font-size--16">기본혜택에서 추가로</span>
+                        <p class="font-size--26 m-t--24">
+                            쿠팡에서 쇼핑하면<br>
+                            <em class="bold">최대 5%적립</em>
+                        </p>
+                        <img src="../images/logo/logo_coupang.png" class="m-t--24" height="40" alt="logo">
+                    </div>
+                </div>
+
+    </div>
+    <div class="tabArea">3</div>
+  </div>
+</div>
+
+<!-- footer -->
+</body>
+
+</html>
+<!-- footer -->
+

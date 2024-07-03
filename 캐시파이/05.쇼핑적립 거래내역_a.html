@@ -1,0 +1,211 @@
+<!-- html include -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Referrer" content="origin">
+        <meta name="referrer" contents="always">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="robots" content="index,nofollow">
+        <meta name="description" content="description">
+        <meta property="og:title" content="캐시파이">
+        <meta property="og:url" content="localhost">
+        <meta property="og:image" content="캐시파이">
+        <meta property="og:description" content="description">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="캐시파이">
+        <meta name="twitter:url" content="localhost">
+        <meta name="twitter:image" content="캐시파이">
+        <meta name="twitter:description" content="description">
+        <title>캐시파이</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <script async="" src="./js/common.js"></script>
+    </head>
+    <body>
+<!-- html include -->
+
+
+<div id="wrap">
+    <header class="header">
+        <div class="header-wrap ">
+            <div class="flex">
+                <button type="button" class="header-wrap__back">캐시 사용</button>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="item content-mt sm">
+            <div class="flex">
+                <div class="flex m-t--4">
+                    <i class="icon icon-c"></i>
+                    <span class="font-size--16 m-t--4 m-l--5">교환가능 캐시</span>
+                </div>
+                <div class="m-l--auto">
+                    <em class="font-color--o font-size--24 bold lato">16,670</em>
+                    <small class="font-size--14 font-q--lightGray">캐시</small>
+                </div>
+            </div>
+            <hr>
+            <div class="item-content">
+                <dl class="sm">
+                    <dt>적립 예정</dt>
+                    <dd><em class="bold font-color--gray">10</em> 건</dd>
+                </dl>
+                <dl class="sm">
+                    <dt>소멸 예정(당월)</dt>
+                    <dd><em class="bold font-color--o">10</em> 캐시</dd>
+                </dl>
+            </div>
+            <div class="flex m-t--16">
+                <button type="button" class="btn btn-gray m-r--4">캐시 사용하기</button>
+                <button type="button" class="btn btn-gray m-l--4">1:1 문의하기</button>
+            </div>
+        </div>
+
+        <div class="tabBtn flex m-t--24">
+            <span class="isActive">적립(예정)/사용<input type="radio" name="tab_chk" value="1" onclick="isTabActive(this)"></span>
+            <span>소멸예정<input type="radio" name="tab_chk" value="2" onclick="isTabActive(this)"></span>
+        </div>
+
+        <div class="flex content-mt">
+            <h5 class="month">6월</h5>
+            <i class="icon icon-arrow-down m-t--3 m-l--10"></i>
+        </div>
+
+        <div class="tabArea isActive">
+            <!-- 
+            적립 : m (mint)
+            취소 : g (gray)
+            사용 : o (orange)
+            예정 : w (white)
+            -->
+            <div class="item content-mt sm m">
+                <div class="flex">
+                    <div class="badge">
+                        적립
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm g">
+                <div class="flex">
+                    <div class="badge">
+                        취소
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12,000</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm o">
+                <div class="flex">
+                    <div class="badge">
+                        사용
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm w">
+                <div class="flex">
+                    <div class="badge">
+                        예정
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tabArea">
+            <!-- type b : line 클래스 추가 -->
+            <div class="item content-mt sm m line">
+                <div class="flex">
+                    <div class="badge">
+                        적립
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm g line">
+                <div class="flex">
+                    <div class="badge">
+                        취소
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12,000</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm o line">
+                <div class="flex">
+                    <div class="badge">
+                        사용
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item content-mt sm w line">
+                <div class="flex">
+                    <div class="badge">
+                        예정
+                    </div>
+                    <div class="ellipsis">
+                        <h6>방문적립 이벤트</h6>
+                        <small>2024. 06. 03 19:30:32</small>
+                    </div>
+                    <div class="m-l--auto">
+                        <span><em>+12</em> 캐시</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- footer -->
+</body>
+
+</html>
+<!-- footer -->
